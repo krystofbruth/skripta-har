@@ -1,0 +1,207 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scrollbar-gutter: stable;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 20px;
+  text-shadow: 0px 0px 20px rgb(0, 0, 0);
+  background-image: url("./images/3d-tiskarny.jpeg");
+  height: 190px;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header button {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+header button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul,
+li {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+#sources,
+#sources > li {
+  list-style-type: none;
+}
+
+#sources > li {
+  display: flex;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 60px;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 44px;
+  margin: 30px 0 10px 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 40px 0 10px 0;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 27px;
+  text-decoration: underline;
+  margin: 30px 0 10px 0;
+}
+
+p,
+li {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.author{
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+a:hover {
+  color: gray;
+}
+
+.gridtwo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.container * {
+  margin: 0;
+}
+
+.container #question {
+  margin-top: 10px 0;
+}
+
+.container #answers {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.container #next {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  display: none;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 10px 0;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+button.correct {
+  color: #30b730;
+  border: 1px solid #30b730;
+}
+
+button.correct:hover,
+button.incorrect:hover {
+  background-color: transparent;
+}
+
+button.incorrect {
+  color: #fa4848;
+  border: 1px solid #fa4848;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+#score {
+  display: none;
+}
