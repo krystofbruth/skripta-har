@@ -22,6 +22,10 @@ const LessonSchema = new Schema({
     content: {
         type: String,
         required: true
+    },
+    quiz: {
+        type: Array,
+        required: false
     }
 }, {timestamps: true})
 const Lesson = mongoose.model('lesson', LessonSchema)
@@ -30,7 +34,8 @@ router.post('/add-lesson', function (req, res) {
     const lesson = new Lesson({
         title: req.body.title,
         author: req.body.author,
-        content: req.body.content
+        content: req.body.content,
+        quiz: req.body.quiz
     })
     lesson.save()
         .then(function(result) {console.log(`Successfully created new lesson: ${result}`)})

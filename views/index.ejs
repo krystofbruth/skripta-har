@@ -32,7 +32,7 @@
         <h2>Všechny lekce</h2>
         <div id="lessongrid">
             <% lessons.forEach(function(lesson){%>
-                <div style="background-image: url(../images/<%=lesson.image%>);">
+                <div style="background-image: url(../images/cover/<%=lesson._id%>.webp);">
                     <h3><%=lesson.title%></h3>
                     <button onclick="location.href='/lessons/<%=lesson._id%>'">Přejít na lekci<span class="material-symbols-rounded">arrow_forward</span></button>
                 </div>
